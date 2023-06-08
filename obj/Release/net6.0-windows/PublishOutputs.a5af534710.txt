@@ -1,0 +1,11 @@
+C:\Users\plast\OneDrive\Área de Trabalho\Plastinaflix.exe
+C:\Users\plast\OneDrive\Área de Trabalho\Plastinaflix.dll
+C:\Users\plast\OneDrive\Área de Trabalho\Plastinaflix.deps.json
+C:\Users\plast\OneDrive\Área de Trabalho\Plastinaflix.runtimeconfig.json
+C:\Users\plast\OneDrive\Área de Trabalho\Plastinaflix.pdb
+C:\Users\plast\OneDrive\Área de Trabalho\System.Data.SqlClient.dll
+C:\Users\plast\OneDrive\Área de Trabalho\runtimes\win-arm64\native\sni.dll
+C:\Users\plast\OneDrive\Área de Trabalho\runtimes\win-x64\native\sni.dll
+C:\Users\plast\OneDrive\Área de Trabalho\runtimes\win-x86\native\sni.dll
+C:\Users\plast\OneDrive\Área de Trabalho\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\plast\OneDrive\Área de Trabalho\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

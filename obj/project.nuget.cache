@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m43dwObSPg9ljozdD2GwlB886aR3AYB1sp6FBe2vHtwqnnZMM47QpDVi3WYU2uEUv4PUW/m1kEDuPAVPesv8uQ==",
+  "dgSpecHash": "NaPqeNwacgO/+Iqne4HziET5USL+f9g7A0gIxLvgFowsHmuVA/iI6bUo+zz9NRwFOfU9/gJ0GaB+7Cn5eudj/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\plast\\Downloads\\plastinaflix-main\\Plastinaflix.csproj",
+  "projectFilePath": "C:\\Users\\plast\\Documents\\plastinaflix\\Plastinaflix.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\plast\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\plast\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

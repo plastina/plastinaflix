@@ -26,3 +26,7 @@ C:\Users\plast\Downloads\plastinaflix-main\obj\Release\net6.0-windows\refint\Pla
 C:\Users\plast\Downloads\plastinaflix-main\obj\Release\net6.0-windows\Plastinaflix.pdb
 C:\Users\plast\Downloads\plastinaflix-main\obj\Release\net6.0-windows\Plastinaflix.genruntimeconfig.cache
 C:\Users\plast\Downloads\plastinaflix-main\obj\Release\net6.0-windows\ref\Plastinaflix.dll
+C:\Users\plast\Downloads\plastinaflix\obj\Release\net6.0-windows\Plastinaflix.csproj.AssemblyReference.cache
+C:\Users\plast\Downloads\plastinaflix\obj\Release\net6.0-windows\Plastinaflix.dll
+C:\Users\plast\Downloads\plastinaflix\obj\Release\net6.0-windows\refint\Plastinaflix.dll
+C:\Users\plast\Downloads\plastinaflix\obj\Release\net6.0-windows\Plastinaflix.pdb

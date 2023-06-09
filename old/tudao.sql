@@ -173,7 +173,7 @@ END;
 
 
 --Parte 3
-]
+
 
 
 CREATE PROCEDURE sp_reservar_assento
@@ -190,19 +190,22 @@ BEGIN
         -- Verifica se a sessão existe
         IF NOT EXISTS (SELECT 1 FROM Sessao WHERE sessao_id = @sessao_id)
         BEGIN
-            THROW 50001, 'A sessão especificada não existe.', 1;
+            RAISERROR('A sessão especificada não existe.', 16, 1);
+            RETURN;
         END
 
         -- Verifica se o assento existe
         IF NOT EXISTS (SELECT 1 FROM Assento WHERE assento_id = @assento_id)
         BEGIN
-            THROW 50002, 'O assento especificado não existe.', 1;
+            RAISERROR('O assento especificado não existe.', 16, 1);
+            RETURN;
         END
 
         -- Verifica se o cliente existe
         IF NOT EXISTS (SELECT 1 FROM Cliente WHERE cliente_id = @cliente_id)
         BEGIN
-            THROW 50003, 'O cliente especificado não existe.', 1;
+            RAISERROR('O cliente especificado não existe.', 16, 1);
+            RETURN;
         END
 
         -- Verifica se o assento está disponível
@@ -214,13 +217,15 @@ BEGIN
 
         IF @status = 0
         BEGIN
-            THROW 50004, 'O assento não está disponível para reserva.', 1;
+            RAISERROR('O assento não está disponível para reserva.', 16, 1);
+            RETURN;
         END
 
         -- Verifica se o assento já está reservado por outro cliente na mesma sessão
         IF EXISTS (SELECT 1 FROM Reserva WHERE sessao_id = @sessao_id AND assento_id = @assento_id)
         BEGIN
-            THROW 50005, 'O assento já está reservado por outro cliente.', 1;
+            RAISERROR('O assento já está reservado por outro cliente.', 16, 1);
+            RETURN;
         END
 
         -- Insere a reserva na tabela Reserva
@@ -239,6 +244,7 @@ END;
 
 
 
+
 CREATE PROCEDURE sp_listar_filmes
 AS
 BEGIN
@@ -250,8 +256,6 @@ END;
 
 
 
-EXECUTE sp_listar_filmes
-
 
 
 -- Inserção de dados na tabela Filme
@@ -262,7 +266,7 @@ VALUES ('Filme 1', 'Descrição do Filme 1', '2h 30min'),
 
 -- Inserção de dados na tabela Sala
 INSERT INTO Sala (numero, capacidade)
-VALUES ('Sala 1', 100),
+VALUES ('Sala 1', 20),
        ('Sala 2', 80),
        ('Sala 3', 120);
 
@@ -274,13 +278,24 @@ VALUES (1, 1, '2023-05-19', '14:00:00', 1);
 INSERT INTO Assento (sala_id, linha, coluna)
 VALUES (1, 'A', '1'),
        (1, 'A', '2'),
-       (1, 'B', '1'),
-       (2, 'A', '1'),
-       (2, 'A', '2'),
-       (2, 'B', '1'),
-       (3, 'A', '1'),
-       (3, 'A', '2'),
-       (3, 'B', '1');
+       (1, 'A', '3'),
+       (1, 'A', '4'),
+       (1, 'A', '5'),
+       (1, 'B', '6'),
+       (1, 'B', '7'),
+       (1, 'B', '8'),
+       (1, 'B', '9'),
+	   (1, 'B', '10'),
+       (1, 'C', '11'),
+       (1, 'C', '12'),
+       (1, 'C', '13'),
+       (1, 'C', '14'),
+       (1, 'C', '15'),
+       (1, 'D', '16'),
+       (1, 'D', '17'),
+	   (1, 'D', '18'),
+       (1, 'D', '19'),
+	   (1, 'D', '20');
 
 -- Inserção de dados na tabela Cliente
 INSERT INTO Cliente (nome, email, telefone)

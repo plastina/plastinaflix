@@ -24,7 +24,6 @@ C:\Users\plast\Documents\Plastinaflix\bin\Debug\net6.0-windows\runtimes\win\lib\
 C:\Users\plast\Documents\Plastinaflix\obj\Debug\net6.0-windows\Plastinaflix.csproj.CopyComplete
 C:\Users\plast\Documents\Plastinaflix\obj\Debug\net6.0-windows\Plastinaflix.controleDeFilmes.resources
 C:\Users\plast\Documents\Plastinaflix\obj\Debug\net6.0-windows\Plastinaflix.criarReserva.resources
-C:\Users\plast\Documents\Plastinaflix\obj\Debug\net6.0-windows\Plastinaflix.telaReserva.resources
 C:\Users\estagio.vagnerluis\Desktop\plastinaflix-main\plastinaflix-main\obj\Debug\net6.0-windows\Plastinaflix.csproj.AssemblyReference.cache
 C:\Users\estagio.vagnerluis\Desktop\plastinaflix-main\plastinaflix-main\obj\Debug\net6.0-windows\Plastinaflix.controleDeFilmes.resources
 C:\Users\estagio.vagnerluis\Desktop\plastinaflix-main\plastinaflix-main\obj\Debug\net6.0-windows\Plastinaflix.controleDeSessoes.resources
@@ -138,3 +137,9 @@ C:\Users\plast\Downloads\plastinaflix-main\obj\Debug\net6.0-windows\refint\Plast
 C:\Users\plast\Downloads\plastinaflix-main\obj\Debug\net6.0-windows\Plastinaflix.pdb
 C:\Users\plast\Downloads\plastinaflix-main\obj\Debug\net6.0-windows\Plastinaflix.genruntimeconfig.cache
 C:\Users\plast\Downloads\plastinaflix-main\obj\Debug\net6.0-windows\ref\Plastinaflix.dll
+C:\Users\plast\Downloads\plastinaflix\obj\Debug\net6.0-windows\Plastinaflix.csproj.AssemblyReference.cache
+C:\Users\plast\Downloads\plastinaflix\obj\Debug\net6.0-windows\Plastinaflix.dll
+C:\Users\plast\Downloads\plastinaflix\obj\Debug\net6.0-windows\refint\Plastinaflix.dll
+C:\Users\plast\Downloads\plastinaflix\obj\Debug\net6.0-windows\Plastinaflix.pdb
+C:\Users\plast\Documents\Plastinaflix\obj\Debug\net6.0-windows\Plastinaflix.Orquestrador.resources
+C:\Users\plast\Documents\Plastinaflix\obj\Debug\net6.0-windows\Plastinaflix.Properties.Resources.resources

@@ -42,7 +42,7 @@ namespace Plastinaflix
                     // Executa a procedure
                     command.ExecuteNonQuery();
 
-                    MessageBox.Show("Procedure executada com sucesso!");
+                    MessageBox.Show("Sessão criada com sucesso!");
                 }
             }
         }

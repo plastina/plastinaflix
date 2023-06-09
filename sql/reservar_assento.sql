@@ -13,30 +13,24 @@ BEGIN
             RAISERROR('O assento especificado não existe.', 16, 1);
             RETURN;
         END
-
+		
         -- Verifica se o assento está disponível
         DECLARE @status BIT;
 
         SELECT @status = STATUS
-        FROM Sessao
-        WHERE sessao_id = @assento_id;
+        FROM Reserva
+        WHERE assento_id = @assento_id;
 
-        IF @status = 0
+        IF @status = 1
         BEGIN
             RAISERROR('O assento não está disponível para reserva.', 16, 1);
             RETURN;
         END
-
-        -- Verifica se o assento já está reservado por outro cliente
-        IF EXISTS (SELECT 1 FROM Reserva WHERE assento_id = @assento_id)
-        BEGIN
-            RAISERROR('O assento já está reservado por outro cliente.', 16, 1);
-            RETURN;
-        END
+		     
 
         -- Insere a reserva na tabela Reserva
         INSERT INTO Reserva (assento_id, STATUS)
-        VALUES (@assento_id, 0);
+        VALUES (@assento_id, 1);
 
         COMMIT; -- Confirma a transação
     END TRY

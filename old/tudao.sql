@@ -300,7 +300,7 @@ VALUES (1, 'A', '1'),
 -- Inserção de dados na tabela Cliente
 INSERT INTO Cliente (nome, email, telefone)
 VALUES ('BP', 'cliente1@example.com', '1234567890'),
-       ('Piruzin', 'cliente2@example.com', '9876543210');
+       ('Gabrielle', 'cliente2@example.com', '9876543210');
 
 -- Inserção de dados na tabela Reserva
 INSERT INTO Reserva (sessao_id, assento_id, cliente_id, STATUS)

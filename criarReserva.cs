@@ -57,9 +57,9 @@ namespace Plastinaflix
                                 procedureCommand.CommandType = CommandType.StoredProcedure;
 
                                 procedureCommand.Parameters.AddWithValue("@assento_id", assento);
+                                procedureCommand.Parameters.AddWithValue("@nome", textBox1.Text);
 
                                 procedureCommand.ExecuteNonQuery();
-
                             }
                         }
                         assentosReservados.AddRange(_idAssentos);
@@ -80,8 +80,8 @@ namespace Plastinaflix
             {
                 MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
         }
+
 
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
